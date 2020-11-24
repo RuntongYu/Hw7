@@ -1,0 +1,37 @@
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  body {text-align: center;
+}
+
+#Right-Wheel,
+#Left-Wheel {
+    animation: Wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Man-Bike {
+    animation: Bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes Wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes Bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
